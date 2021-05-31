@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
+  <title>Lovefinderzz</title>
+  <script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="main-buttons">
+      <div class="filters" filters-button>
+        <p>Filters</p> <i class="material-icons filter-icon">volume_mute</i>
+      </div>
+      <div class="relocation-button">
+        <p>Relocation</p><i class="material-icons">add_location</i>
+      </div>
+      <div class="passport" passport-btn>
+        <p>Passport</p><i class="material-icons">flight</i>
+      </div>
+
+      <div title="Messages">
+        <p>Messages</p><i class="material-icons">question_answer</i>
+      </div>
+      <div title="Settings" header-settings-btn>
+        <p>Settings</p><i class="material-icons">settings</i>
+      </div>
+    </div>
+
+  </header>
+
+  <main possible-matches>
+
+  </main>
+
+  <div class="overlay-effect">
+  </div>
+
+  <div class="filter-board">
+
+    <button class="close-filters-button" title="Close">X</button>
+
+    <h4>Min Max Age</h4>
+    <div class="age-filters">
+      <div class="age-filter">
+        <h4>Min Age</h4>
+        <input type="number" class="age-input" min-age-input>
+      </div>
+      <div class="age-filter">
+        <h4>Max Age</h4>
+        <input type="number" class="age-input" max-age-input>
+      </div>
+
+
+    </div>
+
+    <h4>Gender</h4>
+    <div>
+      <input type="checkbox" male-profiles-checkbox>Male
+      <input type="checkbox" female-profiles-checkbox>Female
+    </div>
+
+    <div>
+      <input type="checkbox" online-profiles-checkbox>Only Show Online Profiles
+    </div>
+
+    <h4 title="Only Premium Members Can Use This Filter">Relationship Status <i
+        class="material-icons premium-icon">grade</i> </h4>
+
+    <div class="translucent-div">
+      <input type="checkbox"> Single
+      <input type="checkbox"> Complicated
+      <br>
+      <input type="checkbox"> Open Relationship
+      <br>
+      <input type="checkbox"> Relationship
+    </div>
+
+
+    <br>
+    <br>
+
+    <button class="apply-filters-button">Apply Filters</button>
+
+  </div>
+
+  <div class="filter-div">
+    <div class="filter-tags">
+
+    </div>
+    <button class="undo-filters-button">Undo Filters <i class="material-icons">cancel</i></button>
+  </div>
+
+
+
+  <section class="settings" settings-section>
+
+    <button class="close-settings-btn" title="Close">X</button>
+
+    <div class="profile-settings">
+      <div class="profile-picture-div">
+        <img class="profile-picture" src="Images/thypic.png" alt="">
+        <i class="material-icons" title="Upload Photo">insert_photo</i>
+      </div>
+
+      <div class="profile-other-pictures-container">
+        <i class="material-icons" slide-to-left-icon>chevron_left</i>
+        <div class="profile-other-pictures">
+          <img src="./Images/self Images/self1.png" alt="">
+          <img src="./Images/self Images/self2.png" alt="">
+          <img src="./Images/self Images/self3.png" alt="">
+          <img src="./Images/self Images/self4.png" alt="">
+          <img src="./Images/self Images/self5.png" alt="">
+          <img src="./Images/self Images/self6.png" alt="">
+        </div>
+        <i class="material-icons" slide-to-right-icon>chevron_right</i>
+      </div>
+
+
+      <p class="profile-header">Name</p>
+      <input type="text" class="profile-username" placeholder="Name">
+
+      <p class="profile-header">Age</p>
+      <input type="number" class="profile-username" placeholder="Age">
+
+      <p class="profile-header">Gender</p>
+      <div class="custom-select">
+        <select class="that-select" name="" id="">
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">-</option>
+        </select>
+        <span class="custom-arrow"><i class="material-icons">expand_more</i></span>
+      </div>
+
+      <p class="profile-header">Ethnicity</p>
+      <div class="custom-select">
+        <select class="that-select" name="" id="">
+          <option value="">White</option>
+          <option value="">Black</option>
+          <option value="">Asian</option>
+          <option value="">Latino</option>
+          <option value="">Middle Eastern</option>
+          <option value="">Mixed</option>
+          <option value="">-</option>
+        </select>
+        <span class="custom-arrow"><i class="material-icons">expand_more</i></span>
+      </div>
+
+      <p class="profile-header">Relationship Status</p>
+      <div class="custom-select">
+        <select class="that-select" name="" id="">
+          <option value="">Single</option>
+          <option value="">In a Relationship</option>
+          <option value="">Complicated</option>
+          <option value="">Open Relationship</option>
+          <option value="">-</option>
+        </select>
+        <span class="custom-arrow"><i class="material-icons">expand_more</i></span>
+      </div>
+
+      <p class="profile-header">Units of Measurement</p>
+      <div class="custom-select">
+        <select class="that-select" name="" id="">
+          <option value="">US-Standard</option>
+          <option value="">Metric</option>
+        </select>
+        <span class="custom-arrow"><i class="material-icons">expand_more</i></span>
+      </div>
+
+      <p class="profile-header">Description</p>
+      <textarea class="profile-description" placeholder="Description" name="" id="" cols="30" rows="4"></textarea>
+
+      <p class="profile-header">Interests</p>
+      <div class="profile-interests">
+        <div class="profile-interest">Painting <button class="delete-interest" title="Delete Interest">X</button></div>
+        <div class="profile-interest">Singing <button class="delete-interest" title="Delete Interest">X</button></div>
+        <div class="profile-interest">Beer <button class="delete-interest" title="Delete Interest">X</button></div>
+        <div class="profile-interest">Drawing <button class="delete-interest" title="Delete Interest">X</button></div>
+        <div class="profile-interest">Coffee <button class="delete-interest" title="Delete Interest">X</button></div>
+        <i class="material-icons add-interest" title="Add Interest">border_color</i>
+      </div>
+    </div>
+
+    <button class="settings-save-button">Save Changes <i class="material-icons">check_circle</i></button>
+
+  </section>
+
+  <section class="messages"></section>
+
+
+  <section class="algorithm">
+    <h4>Let's Pick a Location</h4>
+    <p>Location helps us finding the closest users to your area.</p>
+    <p>Click your location on the map below.</p>
+    <div class="location-picker">
+      <img class="location-picker-map" src="Images/citymap.png" alt="">
+      <div class="location-dummy">
+      </div>
+    </div>
+
+    <button class="relocation-set-button">Click on a Square<i class="material-icons">mouse</i></button>
+
+  </section>
+
+  <main class="profile-container" profile-container></main>
+
+  <div class="more-profiles-limit">
+    ONLY OUR PREMIUM MEGA SHINY HERO USERS GET TO SEE MORE THAN 50 PROFILES. <br> CLICK <span
+      class="bait-span">HERE</span>
+    TO UPGRADE.
+  </div>
+
+
+  <div class="premium-ad" premium-ad>
+
+    <p class="upgrade-encouragement">UPGRADE YOUR ACCOUNT</p>
+
+    <i class="close-ad-btn material-icons" close-ad-btn title="Close">highlight_off</i>
+    <div class="ad-picture-slider">
+      <img src="./Images/upgrade Images/filters.png" alt="" ad-picture-1>
+      <img src="./Images/upgrade Images/passport.png" alt="" ad-picture-2>
+      <img src="./Images/upgrade Images/people.png" alt="" ad-picture-3>
+    </div>
+
+    <div class="ad-infos">
+      <div ad-info-1>
+        <h4>1) More Filters</h4>
+        <p>Make sure that you are getting closer to your one true love!</p>
+      </div>
+      <div ad-info-2>
+        <h4>2) Search Worldwide</h4>
+        <p>Passport to anywhere around the globe and see if your true love is from another culture!</p>
+      </div>
+      <div ad-info-3>
+        <h4>3) See More Profiles</h4>
+        <p>Don't be limited to our regular 50 users limit, with the upgrades, see more results than usual!</p>
+      </div>
+    </div>
+
+    <h3>Select Your Plan</h3>
+    <div class="upgrade-options">
+      <div class="plus-package upgrade-option">
+        <p>Plus Package</p>
+        <p class="upgrade-price">$5.99</p>
+      </div>
+      <div class="premium-package upgrade-option">
+        <p>Premium Package</p>
+        <p class="upgrade-price">$10.99</p>
+      </div>
+      <div class="mega-shiny-package upgrade-option">
+        <p>Mega Shiny Package</p>
+        <p class="upgrade-price">$15.99</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
